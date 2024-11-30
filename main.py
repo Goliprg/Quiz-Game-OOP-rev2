@@ -12,7 +12,7 @@ question = QuizBrain(question_bank)
 
 
 
-for i in range (0,len(question_bank)):
+while question.still_has_questions() ==  1:
     question.next_question()
 
 print(f"your score is: {question.score} out of {len(question_bank)}")
